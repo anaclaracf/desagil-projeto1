@@ -4,24 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Historia1">
+    tools:context=".Historia3">
 
     <TextView
-        android:id="@+id/display_msg1"
+        android:id="@+id/text_message"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:textSize="35sp"
-        android:gravity="center"
-        android:text=""/>
+        android:textSize="25sp"
+        android:gravity="top"
+        android:hint="Mensagem" />
+
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="25sp"
+        android:hint="Escolha um contato para enviar" />
+
 
     <Button
-        android:id="@+id/button_example"
+        android:id="@+id/button_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="Contatos" />
+
+    <Button
+        android:id="@+id/button_send"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25sp"
         android:gravity="center"
         android:text="Enviar" />
+
+
 
 </LinearLayout>
