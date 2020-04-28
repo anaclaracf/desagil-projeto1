@@ -25,28 +25,28 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, Historia1.class);
             intent.putExtra("bla", buttonExample1.getText().toString());
             startActivity(intent);
-            finish();
+            onPause();
         });
 
         buttonExample2.setOnClickListener((view) -> {
             Intent intent = new Intent(MainActivity.this, Historia1.class);
             intent.putExtra("bla", buttonExample2.getText().toString());
             startActivity(intent);
-            finish();
+            onPause();
         });
 
         buttonExample3.setOnClickListener((view) -> {
             Intent intent = new Intent(MainActivity.this, Historia1.class);
             intent.putExtra("bla", buttonExample3.getText().toString());
             startActivity(intent);
-            finish();
+            onPause();
         });
 
         buttonExample4.setOnClickListener((view) -> {
             Intent intent = new Intent(MainActivity.this, Historia1.class);
             intent.putExtra("bla", buttonExample4.getText().toString());
             startActivity(intent);
-            finish();
+            onPause();
         });
 
     }

@@ -27,7 +27,7 @@ public class Historia1 extends AppCompatActivity {
     public void onBackPressed()
     {
         startActivity(new Intent(Historia1.this, MainActivity.class));
-        onPause();
+        finish();
     }
 
 
@@ -47,7 +47,7 @@ public class Historia1 extends AppCompatActivity {
                 Intent intent = new Intent(Historia1.this, Historia3.class);
                 intent.putExtra("blabla", valor);
                 startActivity(intent);
-                finish();
+                onPause();
             } else {
                 String[] permissions = new String[]{
                         Manifest.permission.SEND_SMS,
