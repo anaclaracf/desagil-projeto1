@@ -23,6 +23,13 @@ public class Historia1 extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @Override
+    public void onBackPressed()
+    {
+        startActivity(new Intent(Historia1.this, MainActivity.class));
+        onPause();
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

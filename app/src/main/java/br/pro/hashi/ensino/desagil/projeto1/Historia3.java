@@ -24,6 +24,13 @@ public class Historia3 extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed()
+    {
+        startActivity(new Intent(Historia3.this, Historia1.class));
+        onPause();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_historia3);

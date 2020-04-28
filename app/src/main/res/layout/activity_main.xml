@@ -10,29 +10,37 @@
     <Button
         android:id="@+id/button_example1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:textSize="20sp"
         android:gravity="center"
         android:text="Preciso ir ao banheiro" />
 
     <Button
         android:id="@+id/button_example2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:textSize="20sp"
         android:gravity="center"
-        android:text="Estou com uma dor repentina" />
+        android:text="Estou com dor repentina" />
 
     <Button
         android:id="@+id/button_example3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:textSize="20sp"
         android:gravity="center"
         android:text="Estou com fome" />
 
     <Button
         android:id="@+id/button_example4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp"
         android:gravity="center"
+        android:textSize="20sp"
         android:text="Estou com sede" />
 
 </LinearLayout>
