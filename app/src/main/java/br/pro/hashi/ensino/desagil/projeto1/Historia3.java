@@ -77,14 +77,30 @@ public class Historia3 extends AppCompatActivity {
                 if (resultCode == Activity.RESULT_OK) {
                     Uri contactData = data.getData();
                     Cursor c =  getContentResolver().query(contactData, null, null, null, null);
+                    Cursor phones = getContentResolver().query(Phone.CONTENT_URI, null);
                     if (c.moveToFirst()) {
                         String name = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
+                        String number = c.getString(c.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+//                        System.out.println(number);
                         textPhone.setText(name);
                     }
                 }
                 break;
         }
     }
+
+    String phone = textPhone.getText().toString();
+// Esta verificação do número de telefone é bem
+// rígida, pois exige até mesmo o código do país.
+if (!PhoneNumberUtils.isGlobalPhoneNumber(phone)) {
+        showToast("Número inválido!");
+        return;
+    }
+    // Enviar uma mensagem de SMS. Por simplicidade,
+// não estou verificando se foi mesmo enviada,
+// mas é possível fazer uma versão que verifica.
+    SmsManager manager = SmsManager.getDefault();
+        manager.sendTextMessage(phone, null, message, null, null);
 
 
 }
