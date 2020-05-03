@@ -206,7 +206,66 @@ public class Translator {
 
         espaco26 = new Node(' ');
 
-
+        n.setParent(t);
+        m.setParent(t);
+        d.setParent(n);
+        k.setParent(n);
+        g.setParent(m);
+        o.setParent(m);
+        b.setParent(d);
+        x.setParent(d);
+        c.setParent(k);
+        y.setParent(k);
+        z.setParent(g);
+        q.setParent(g);
+        espaco1.setParent(o);
+        espaco2.setParent(o);
+        seis.setParent(b);
+        espaco3.setParent(b);
+        espaco4.setParent(x);
+        espaco5.setParent(x);
+        espaco6.setParent(c);
+        espaco7.setParent(c);
+        espaco8.setParent(y);
+        espaco9.setParent(y);
+        sete.setParent(z);
+        espaco10.setParent(z);
+        espaco11.setParent(q);
+        espaco12.setParent(q);
+        oito.setParent(espaco1);
+        espaco13.setParent(espaco1);
+        nove.setParent(espaco2);
+        zero.setParent(espaco2);
+        i.setParent(e);
+        a.setParent(e);
+        s.setParent(i);
+        u.setParent(i);
+        r.setParent(a);
+        w.setParent(a);
+        h.setParent(s);
+        v.setParent(s);
+        f.setParent(u);
+        espaco14.setParent(u);
+        l.setParent(r);
+        espaco15.setParent(r);
+        p.setParent(w);
+        j.setParent(w);
+        cinco.setParent(h);
+        quatro.setParent(h);
+        espaco16.setParent(v);
+        tres.setParent(v);
+        espaco17.setParent(f);
+        espaco18.setParent(f);
+        espaco19.setParent(espaco14);
+        dois.setParent(espaco14);
+        espaco20.setParent(l);
+        espaco21.setParent(l);
+        espaco22.setParent(espaco15);
+        espaco23.setParent(espaco15);
+        espaco24.setParent(p);
+        espaco25.setParent(p);
+        espaco26.setParent(j);
+        um.setParent(j);
     }
 
 
