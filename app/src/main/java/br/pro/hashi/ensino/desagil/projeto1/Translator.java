@@ -248,6 +248,14 @@ public class Translator {
         c.setLeft(espaco6);
         c.setRight(espaco7);
 
+        e.setParent(root);
+        e.setLeft(i);
+        e.setRight(a);
+
+        t.setParent(root);
+        t.setLeft(n);
+        t.setRight(m);
+
         y.setParent(k);
         y.setLeft(espaco8);
         y.setRight(espaco9);
@@ -471,7 +479,7 @@ public class Translator {
         if (exists) {
             return current.getValue();
         }
-        return 'o';
+        return ' ';
     }
 //    }
 //        return ' ';
