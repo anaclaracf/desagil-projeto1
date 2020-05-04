@@ -74,6 +74,8 @@ public class Translator {
     private Node espaco26;
 
 
+
+
     private HashMap<Character, Node> map;
 
 
@@ -206,23 +208,75 @@ public class Translator {
 
         espaco26 = new Node(' ');
 
+        root.setLeft(e);
+        root.setRight(t);
+
         n.setParent(t);
+        n.setLeft(d);
+        n.setRight(k);
+
         m.setParent(t);
+        m.setLeft(g);
+        m.setRight(o);
+
         d.setParent(n);
+        d.setLeft(b);
+        d.setRight(x);
+
         k.setParent(n);
+        k.setLeft(c);
+        k.setRight(y);
+
         g.setParent(m);
+        g.setLeft(z);
+        g.setRight(q);
+
         o.setParent(m);
+        o.setLeft(espaco1);
+        o.setRight(espaco2);
+
         b.setParent(d);
+        b.setLeft(seis);
+        b.setRight(espaco3);
+
         x.setParent(d);
+        x.setLeft(espaco4);
+        x.setRight(espaco5);
+
         c.setParent(k);
+        c.setLeft(espaco6);
+        c.setRight(espaco7);
+
         y.setParent(k);
+        y.setLeft(espaco8);
+        y.setRight(espaco9);
+
         z.setParent(g);
+        z.setLeft(sete);
+        z.setRight(espaco10);
+
         q.setParent(g);
+        q.setLeft(espaco11);
+        q.setRight(espaco12);
+
         espaco1.setParent(o);
+        espaco1.setLeft(oito);
+        espaco1.setRight(espaco13);
+
+
+
         espaco2.setParent(o);
+        espaco2.setLeft(nove);
+        espaco2.setRight(zero);
+
+
         seis.setParent(b);
+
+
         espaco3.setParent(b);
+
         espaco4.setParent(x);
+
         espaco5.setParent(x);
         espaco6.setParent(c);
         espaco7.setParent(c);
@@ -236,26 +290,79 @@ public class Translator {
         espaco13.setParent(espaco1);
         nove.setParent(espaco2);
         zero.setParent(espaco2);
+
         i.setParent(e);
+        i.setLeft(s);
+        i.setRight(u);
+
         a.setParent(e);
+        a.setLeft(r);
+        a.setRight(w);
+
         s.setParent(i);
+        s.setLeft(h);
+        s.setRight(v);
+
         u.setParent(i);
+        u.setLeft(f);
+        u.setRight(espaco14);
+
         r.setParent(a);
+        r.setLeft(l);
+        r.setRight(espaco15);
+
         w.setParent(a);
+        w.setLeft(p);
+        w.setRight(j);
+
         h.setParent(s);
+        h.setLeft(cinco);
+        h.setRight(quatro);
+
         v.setParent(s);
+        v.setLeft(espaco16);
+        v.setRight(tres);
+
         f.setParent(u);
+        f.setLeft(espaco17);
+        f.setRight(espaco18);
+
         espaco14.setParent(u);
+        espaco14.setLeft(espaco19);
+        espaco14.setRight(dois);
+
         l.setParent(r);
+        l.setLeft(espaco20);
+        l.setRight(espaco21);
+
         espaco15.setParent(r);
+        espaco15.setLeft(espaco22);
+        espaco15.setRight(espaco23);
+
         p.setParent(w);
+        p.setLeft(espaco24);
+        p.setRight(espaco25);
+
+
         j.setParent(w);
+        j.setLeft(espaco26);
+        j.setRight(um);
+
         cinco.setParent(h);
+
+
         quatro.setParent(h);
+
+
+
         espaco16.setParent(v);
+
         tres.setParent(v);
+
         espaco17.setParent(f);
+
         espaco18.setParent(f);
+
         espaco19.setParent(espaco14);
         dois.setParent(espaco14);
         espaco20.setParent(l);
@@ -266,6 +373,7 @@ public class Translator {
         espaco25.setParent(p);
         espaco26.setParent(j);
         um.setParent(j);
+
     }
 
 
