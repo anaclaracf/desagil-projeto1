@@ -8,14 +8,23 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
+import android.telephony.SmsManager;
+import android.view.Gravity;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.content.pm.PackageManager;
+import android.widget.Toast;
 
 public class Historia1 extends AppCompatActivity {
 
     private static final int REQUEST_SEND_SMS = 0;
+
+    private void showToast(String text) {
+        Toast toast = Toast.makeText(this, text, Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.TOP, 0, 100);
+        toast.show();
+    }
 
     private void startHistoria3() {
 
@@ -40,6 +49,7 @@ public class Historia1 extends AppCompatActivity {
         answer.setText(valor);
 
         Button buttonExample = findViewById(R.id.button_example);
+        Button buttonExample2 = findViewById(R.id.button_example2);
 
         buttonExample.setOnClickListener((view) -> {
 
@@ -55,6 +65,14 @@ public class Historia1 extends AppCompatActivity {
 
                 ActivityCompat.requestPermissions(this, permissions, REQUEST_SEND_SMS);
             }
+        });
+
+        buttonExample2.setOnClickListener((view) -> {
+            String message = answer.getText().toString();
+            String phone = "11942506425";
+            SmsManager manager = SmsManager.getDefault();
+            showToast("Mensagem enviada com sucesso!");
+            manager.sendTextMessage(phone, null, message, null, null);
         });
 
     }

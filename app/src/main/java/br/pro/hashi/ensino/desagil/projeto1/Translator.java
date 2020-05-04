@@ -82,7 +82,7 @@ public class Translator {
     // Você deve mudar o recheio do construtor,
     // de acordo com os requisitos do projeto.
     public Translator() {
-        root = new Node();
+//        root = new Node();
 
         a = new Node('a');
 
