@@ -5,6 +5,8 @@
 
 package br.pro.hashi.ensino.desagil.projeto1;
 
+import android.renderscript.Sampler;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -49,7 +51,7 @@ public class Translator {
     private Node espaco1;
     private Node espaco2;
     private Node espaco3;
-    private Node espaco4;
+    private Node barra;
     private Node espaco5;
     private Node espaco6;
     private Node espaco7;
@@ -73,16 +75,15 @@ public class Translator {
     private Node espaco25;
     private Node espaco26;
 
-
-
-
     private HashMap<Character, Node> map;
 
 
     // Você deve mudar o recheio do construtor,
     // de acordo com os requisitos do projeto.
     public Translator() {
-        root = new Node();
+        map = new HashMap<Character, Node>();
+
+        root = new Node(' ');
 
         a = new Node('a');
 
@@ -162,7 +163,7 @@ public class Translator {
 
         espaco3 = new Node(' ');
 
-        espaco4 = new Node(' ');
+        barra = new Node(' ');
 
         espaco5 = new Node(' ');
 
@@ -240,7 +241,7 @@ public class Translator {
         b.setRight(espaco3);
 
         x.setParent(d);
-        x.setLeft(espaco4);
+        x.setLeft(barra);
         x.setRight(espaco5);
 
         c.setParent(k);
@@ -275,7 +276,7 @@ public class Translator {
 
         espaco3.setParent(b);
 
-        espaco4.setParent(x);
+        barra.setParent(x);
 
         espaco5.setParent(x);
         espaco6.setParent(c);
@@ -374,17 +375,111 @@ public class Translator {
         espaco26.setParent(j);
         um.setParent(j);
 
+
+        map.put('a', a);
+        map.put('b', b);
+        map.put('c', c);
+        map.put('d', d);
+        map.put('e', e);
+        map.put('f', f);
+        map.put('g', g);
+        map.put('h', h);
+        map.put('i', i);
+        map.put('j', j);
+        map.put('k', k);
+        map.put('l', l);
+        map.put('m', m);
+        map.put('n', n);
+        map.put('o', o);
+        map.put('p', p);
+        map.put('q', q);
+        map.put('r', r);
+        map.put('s', s);
+        map.put('t', t);
+        map.put('u', u);
+        map.put('v', v);
+        map.put('w', w);
+        map.put('x', x);
+        map.put('y', y);
+        map.put('z', z);
+        map.put('1', um);
+        map.put('2',dois);
+        map.put('3', tres);
+        map.put('4', quatro);
+        map.put('5', cinco);
+        map.put('6', seis);
+        map.put('7', sete);
+        map.put('8', oito);
+        map.put('9', nove);
+        map.put('0', zero);
+        map.put(' ', espaco1);
+        map.put(' ', espaco2);
+        map.put(' ', espaco3);
+        map.put('/', barra);
+        map.put(' ', espaco5);
+        map.put(' ', espaco6);
+        map.put(' ', espaco7);
+        map.put(' ', espaco8);
+        map.put(' ', espaco9);
+        map.put(' ', espaco10);
+        map.put(' ', espaco11);
+        map.put(' ', espaco12);
+        map.put(' ', espaco13);
+        map.put(' ', espaco14);
+        map.put(' ', espaco15);
+        map.put(' ', espaco16);
+        map.put(' ', espaco17);
+        map.put(' ', espaco18);
+        map.put(' ', espaco19);
+        map.put(' ', espaco20);
+        map.put(' ', espaco21);
+        map.put(' ', espaco22);
+        map.put(' ', espaco23);
+        map.put(' ', espaco24);
+        map.put(' ', espaco25);
+        map.put(' ', espaco26);
+
+
+
+
+
+
+
     }
+
+
 
 
     // Você deve mudar o recheio deste método,
     // de acordo com os requisitos do projeto.
-    public char moseToChar(String code) { //decode
-        return ' ';
+    public char morseToChar(String code) { //decode
+        Node current = root;
+        boolean exists = true;
+        for (int i = 0; (i < code.length() && exists); i++) {
+            if (code.substring(i, i + 1).equals(".")) {
+                if (current.getLeft() == null) {
+                    exists = false;
+                }
+                current = current.getLeft();
+            } else if (code.substring(i, i + 1).equals("-")) {
+                if (current.getRight() == null) {
+                    exists = false;
+                }
+                current = current.getRight();
+            }
+        }
+        if (exists) {
+            return current.getValue();
+        }
+        return 'o';
     }
+//    }
+//        return ' ';
 
 
-    // Você deve mudar o recheio deste método,
+//    morseToChar(")
+
+   // Você deve mudar o recheio deste método,
     // de acordo com os requisitos do projeto.
     private String charToMorse(Node node) { //encode
         return " ";
