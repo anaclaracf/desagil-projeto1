@@ -13,12 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Historia2"
+            android:launchMode="singleTask"></activity>
+        <activity
             android:name=".Historia3"
-            android:launchMode="singleTask">
-        </activity>
-        <activity android:name=".Historia1"
-                 android:launchMode="singleTask">
-        </activity>
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".Historia1"
+            android:launchMode="singleTask"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

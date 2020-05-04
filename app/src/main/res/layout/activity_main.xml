@@ -43,6 +43,15 @@
         android:textSize="20sp"
         android:text="Estou com sede" />
 
+    <Button
+        android:id="@+id/button_example5"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Quero enviar uma mensagem" />
+
 </LinearLayout>
 
 

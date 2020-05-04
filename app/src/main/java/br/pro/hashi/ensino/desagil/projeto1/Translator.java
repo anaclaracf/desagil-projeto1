@@ -446,13 +446,7 @@ public class Translator {
         map.put(' ', espaco24);
         map.put(' ', espaco25);
         map.put(' ', espaco26);
-
-
-
-
-
-
-
+        
     }
 
 

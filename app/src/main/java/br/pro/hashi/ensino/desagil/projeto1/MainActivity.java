@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonExample2 = findViewById(R.id.button_example2);
         Button buttonExample3 = findViewById(R.id.button_example3);
         Button buttonExample4 = findViewById(R.id.button_example4);
+        Button buttonExample5 = findViewById(R.id.button_example5);
 
         buttonExample1.setOnClickListener((view) -> {
             Intent intent = new Intent(MainActivity.this, Historia1.class);
@@ -45,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
         buttonExample4.setOnClickListener((view) -> {
             Intent intent = new Intent(MainActivity.this, Historia1.class);
             intent.putExtra("bla", buttonExample4.getText().toString());
+            startActivity(intent);
+            onPause();
+        });
+
+
+        buttonExample5.setOnClickListener((view) -> {
+            Intent intent = new Intent(MainActivity.this, Historia2.class);
             startActivity(intent);
             onPause();
         });
