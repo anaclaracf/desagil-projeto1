@@ -7,6 +7,7 @@ package br.pro.hashi.ensino.desagil.projeto1;
 
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class Translator {
     private Node root;
@@ -465,20 +466,25 @@ public class Translator {
     // de acordo com os requisitos do projeto.
     private String charToMorse(Node node) { //encode
         String str = "";
-        Node raiz = root;
+//        Node raiz = root;
 
 
-        while (node != raiz) {
+        while (node != root) {
+            if(node == root){
+                break;
+            }
             Node pai = node.getParent();
 
             if (pai.getLeft() == node) {
 
-                str= "."+str;
+                str = "." + str;
             } else {
 
-                str= "-"+str;
+                str = "-" + str;
             }
-            node=pai;
+            node = pai;
+
+
         }
 
         return str;
@@ -498,7 +504,30 @@ public class Translator {
     // Você deve mudar o recheio deste método,
     // de acordo com os requisitos do projeto.
     public LinkedList<String> getCodes() {
-        return new LinkedList<>();
+        Queue<Node> queue = new LinkedList<>();
+        LinkedList<String > banana = new LinkedList<>();
+
+
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            Node node = queue.element();
+
+            Node left = node.getLeft();
+            Node right = node.getRight();
+            Translator x = new Translator();
+
+            if (left != null) {
+                banana.add(x.charToMorse(left));
+                queue.add(left);
+            }
+            if (right != null) {
+                banana.add(x.charToMorse(right));
+                queue.add(right);
+            }
+
+        }
+        return banana;
     }
 }
 
