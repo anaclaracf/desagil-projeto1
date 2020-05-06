@@ -5,8 +5,6 @@
 
 package br.pro.hashi.ensino.desagil.projeto1;
 
-import android.renderscript.Sampler;
-
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -76,7 +74,6 @@ public class Translator {
     private Node espaco26;
 
     private HashMap<Character, Node> map;
-
 
     // Você deve mudar o recheio do construtor,
     // de acordo com os requisitos do projeto.
@@ -272,15 +269,11 @@ public class Translator {
         espaco1.setLeft(oito);
         espaco1.setRight(espaco13);
 
-
-
         espaco2.setParent(o);
         espaco2.setLeft(nove);
         espaco2.setRight(zero);
 
-
         seis.setParent(b);
-
 
         espaco3.setParent(b);
 
@@ -352,17 +345,13 @@ public class Translator {
         p.setLeft(espaco24);
         p.setRight(espaco25);
 
-
         j.setParent(w);
         j.setLeft(espaco26);
         j.setRight(um);
 
         cinco.setParent(h);
 
-
         quatro.setParent(h);
-
-
 
         espaco16.setParent(v);
 
@@ -382,7 +371,6 @@ public class Translator {
         espaco25.setParent(p);
         espaco26.setParent(j);
         um.setParent(j);
-
 
         map.put('a', a);
         map.put('b', b);
@@ -449,9 +437,6 @@ public class Translator {
         
     }
 
-
-
-
     // Você deve mudar o recheio deste método,
     // de acordo com os requisitos do projeto.
     public char morseToChar(String code) { //decode
@@ -475,11 +460,6 @@ public class Translator {
         }
         return ' ';
     }
-//    }
-//        return ' ';
-
-
-//    morseToChar(")
 
    // Você deve mudar o recheio deste método,
     // de acordo com os requisitos do projeto.

@@ -24,18 +24,14 @@ public class Historia2 extends AppCompatActivity {
         Button buttondel = findViewById(R.id.button_delete);
         Translator tradutor = new Translator();
         StringBuilder sb = new StringBuilder();
-//        sb.append(a);
-//        sb.append(b);
-//        sb.append(c);
-//        str = sb.toString();
 
         buttonwrite.setOnClickListener((view) -> {
             textMorse.append(".");
         });
+
         buttonwrite.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                // Do what you want to do atfer a long click here
                 textMorse.append("-");
                 return true;
             }
@@ -53,8 +49,19 @@ public class Historia2 extends AppCompatActivity {
         });
 
         buttondel.setOnClickListener((view) -> {
-            if (textMorse.getText().toString() != "") {
+            if (textMorse.getText().toString().isEmpty()) {
+                textMorse.setText("");
+            } else {
                 textMorse.setText(textMorse.getText().toString().substring(0, textMorse.length() - 1));
+            }
+        });
+
+        buttondel.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                sb.delete(0,sb.length());
+                texttraduc.setText(sb.toString());
+                return true;
             }
         });
     }
