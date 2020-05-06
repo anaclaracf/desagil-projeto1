@@ -12,27 +12,30 @@
         android:layout_height="130dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="140dp"
         android:text=""
         android:textColor="#000000"
         android:textSize="31sp" />
 
     <Button
         android:id="@+id/button_example"
-        android:layout_width="200dp"
+        android:layout_width="225dp"
         android:layout_height="100dp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="25sp"
-        android:text="Enviar" />
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_default"
+        android:backgroundTint="#87717171"
+        android:text="Enviar"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button_example2"
-        android:layout_width="200dp"
+        android:layout_width="225dp"
         android:layout_height="100dp"
-        android:text="Enviar para cuidador"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/button_default"
+        android:backgroundTint="#87717171"
+        android:text="Enviar para cuidador"
         android:textSize="25sp" />
 
 </RelativeLayout>

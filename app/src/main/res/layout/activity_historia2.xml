@@ -32,33 +32,45 @@
 
     <Button
         android:id="@+id/button_write"
-        android:layout_width="match_parent"
         android:layout_height="71dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="400dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/button_default"
+        android:backgroundTint="#87717171"
         android:text="Clique(·)    Segure(-)"
         android:textSize="25sp" />
 
     <Button
         android:id="@+id/button_bar"
-        android:layout_width="match_parent"
+        android:background="@drawable/button_default"
+        android:layout_marginBottom="10dp"
+        android:layout_width="400dp"
+        android:layout_marginLeft="5dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="30dp"
+        android:backgroundTint="#87717171"
         android:text="/"
         android:textSize="50sp" />
 
     <Button
         android:id="@+id/button_space"
-        android:layout_width="match_parent"
+        android:background="@drawable/button_default"
+        android:layout_marginBottom="10dp"
+        android:layout_width="400dp"
+        android:layout_marginLeft="5dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="30dp"
+        android:backgroundTint="#87717171"
         android:text="Espaço"
         android:textSize="25sp" />
 
     <Button
         android:id="@+id/button_delete"
-        android:layout_width="match_parent"
+        android:background="@drawable/button_default"
+        android:layout_marginBottom="10dp"
+        android:layout_width="400dp"
+        android:layout_marginLeft="5dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="30dp"
+        android:backgroundTint="#87717171"
         android:text="delete"
         android:textSize="25sp" />
 

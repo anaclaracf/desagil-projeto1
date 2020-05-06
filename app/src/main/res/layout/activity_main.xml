@@ -9,45 +9,64 @@
 
     <Button
         android:id="@+id/button_example1"
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="0dp"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:text="Preciso ir ao banheiro" />
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/button_default"
+        android:backgroundTint="#87717171"
+        android:text="Preciso ir ao banheiro"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/button_example2"
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="0dp"
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/button_default"
+        android:backgroundTint="#87717171"
         android:textSize="20sp"
         android:gravity="center"
         android:text="Estou com dor repentina" />
 
     <Button
         android:id="@+id/button_example3"
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="0dp"
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="#87717171"
+        android:background="@drawable/button_default"
         android:textSize="20sp"
         android:gravity="center"
         android:text="Estou com fome" />
 
     <Button
         android:id="@+id/button_example4"
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="0dp"
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="#87717171"
+        android:background="@drawable/button_default"
         android:gravity="center"
         android:textSize="20sp"
         android:text="Estou com sede" />
 
     <Button
         android:id="@+id/button_example5"
-        android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="0dp"
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="#87717171"
+        android:background="@drawable/button_default"
         android:gravity="center"
         android:textSize="20sp"
         android:text="Quero enviar uma mensagem" />

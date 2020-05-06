@@ -11,9 +11,9 @@
         android:id="@+id/text_message"
         android:layout_width="match_parent"
         android:layout_height="82dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:gravity="top"
-        android:layout_marginLeft="10dp"
         android:hint="Mensagem"
         android:textColor="#000000"
         android:textSize="25sp" />
@@ -30,16 +30,22 @@
 
     <Button
         android:id="@+id/button_contacts"
-        android:layout_width="match_parent"
+        android:layout_width="400dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="#87717171"
+        android:background="@drawable/button_default"
+        android:layout_marginBottom="10dp"
         android:text="Contatos"
         android:textSize="25sp" />
 
     <Button
         android:id="@+id/button_send"
-        android:layout_width="match_parent"
+        android:layout_width="400dp"
         android:layout_height="106dp"
+        android:backgroundTint="#87717171"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/button_default"
         android:gravity="center"
         android:text="Enviar"
         android:textSize="25sp" />
