@@ -399,7 +399,7 @@ public class Translator {
         map.put('y', y);
         map.put('z', z);
         map.put('1', um);
-        map.put('2',dois);
+        map.put('2', dois);
         map.put('3', tres);
         map.put('4', quatro);
         map.put('5', cinco);
@@ -434,7 +434,7 @@ public class Translator {
         map.put(' ', espaco24);
         map.put(' ', espaco25);
         map.put(' ', espaco26);
-        
+
     }
 
     // Você deve mudar o recheio deste método,
@@ -461,11 +461,32 @@ public class Translator {
         return ' ';
     }
 
-   // Você deve mudar o recheio deste método,
+    // Você deve mudar o recheio deste método,
     // de acordo com os requisitos do projeto.
     private String charToMorse(Node node) { //encode
-        return " ";
+        String str = "";
+        Node raiz = root;
+
+
+        while (node != raiz) {
+            Node pai = node.getParent();
+
+            if (pai.getLeft() == node) {
+
+                str= "."+str;
+            } else {
+
+                str= "-"+str;
+            }
+            node=pai;
+        }
+
+        return str;
     }
+
+
+
+
 
 
     // Este método deve permanecer como está.
