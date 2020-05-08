@@ -533,7 +533,11 @@ public class Translator {
                 queue.add(right);
             }
             queue.remove();
-            list.add(x.charToMorse(node));
+
+            if (node.getValue()!= ' ' & node.getValue()!= '!'){
+                list.add(x.charToMorse(node));
+            }
+
         }
 
 
