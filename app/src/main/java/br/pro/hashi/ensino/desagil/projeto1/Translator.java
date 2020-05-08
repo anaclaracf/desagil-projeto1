@@ -472,17 +472,20 @@ public class Translator {
 
 
         while (node.getValue()!= raiz.getValue()) {
+
             Node pai = node.getParent();
 
             if (pai.getLeft() == node) {
 
-                str= "."+str;
+                str = "." + str;
             } else {
 
-                str= "-"+str;
+                str = "-" + str;
             }
 
+
             node=pai;
+
 
         }
 
@@ -506,13 +509,14 @@ public class Translator {
     // de acordo com os requisitos do projeto.
     public LinkedList<String> getCodes() {
 
+
         Queue<Node> queue = new LinkedList<>();
         LinkedList<String> list = new LinkedList<>();
         Translator x= new Translator();
 
 
-        queue.add(root);
 
+        queue.add(root);
 
         while (!queue.isEmpty()) {
             Node node = queue.element();
