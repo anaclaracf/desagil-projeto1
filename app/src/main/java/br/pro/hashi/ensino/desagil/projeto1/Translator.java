@@ -5,10 +5,13 @@
 
 package br.pro.hashi.ensino.desagil.projeto1;
 
+import java.sql.Struct;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class Translator {
+
     private Node root;
     private Node a;
     private Node b;
@@ -80,7 +83,7 @@ public class Translator {
     public Translator() {
         map = new HashMap<Character, Node>();
 
-        root = new Node(' ');
+        root = new Node('!');
 
         a = new Node('a');
 
@@ -468,7 +471,7 @@ public class Translator {
         Node raiz = root;
 
 
-        while (node != raiz) {
+        while (node.getValue()!= raiz.getValue()) {
             Node pai = node.getParent();
 
             if (pai.getLeft() == node) {
@@ -478,8 +481,12 @@ public class Translator {
 
                 str= "-"+str;
             }
+
             node=pai;
+
         }
+
+
 
         return str;
     }
@@ -498,7 +505,35 @@ public class Translator {
     // Você deve mudar o recheio deste método,
     // de acordo com os requisitos do projeto.
     public LinkedList<String> getCodes() {
-        return new LinkedList<>();
+
+        Queue<Node> queue = new LinkedList<>();
+        LinkedList<String> list = new LinkedList<>();
+        Translator x= new Translator();
+
+
+        queue.add(root);
+
+
+        while (!queue.isEmpty()) {
+            Node node = queue.element();
+
+            Node left = node.getLeft();
+            Node right = node.getRight();
+
+            if (left != null) {
+
+                queue.add(left);
+            }
+            if (right != null) {
+
+                queue.add(right);
+            }
+            queue.remove();
+            list.add(x.charToMorse(node));
+        }
+
+
+        return list;
     }
 }
 
