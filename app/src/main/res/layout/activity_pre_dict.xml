@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <Button
@@ -13,9 +14,9 @@
         android:layout_height="110dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="4dp"
-        android:layout_marginLeft="5dp"
         android:background="@drawable/button_default"
         android:backgroundTint="#87717171"
+        android:gravity="center"
         android:text="Dicionário Romano para Morse"
         android:textSize="20sp" />
 
@@ -23,9 +24,8 @@
         android:id="@+id/button_example2"
         android:layout_width="400dp"
         android:layout_height="110dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="4dp"
-        android:layout_marginLeft="5dp"
         android:background="@drawable/button_default"
         android:backgroundTint="#87717171"
         android:textSize="20sp"

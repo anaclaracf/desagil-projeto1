@@ -12,32 +12,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PreDict">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity
+            android:name=".PreDict"
+            android:label="Escolha o dicionário"
+            android:launchMode="singleTask" />
         <activity
             android:name=".PreHistoria1"
+            android:label="Escolha sua frase"
             android:launchMode="singleTask" />
         <activity
             android:name=".Historia5"
+            android:label="Traduza seu morse"
             android:launchMode="singleTask" />
         <activity
             android:name=".Historia4"
+            android:label="Traduza seu romano"
             android:launchMode="singleTask" />
         <activity
             android:name=".Historia2"
+            android:label="Escreva seu texto"
             android:launchMode="singleTask" />
         <activity
             android:name=".Historia3"
+            android:label="Envie seu texto"
             android:launchMode="singleTask" />
         <activity
             android:name=".Historia1"
+            android:label="Texto"
             android:launchMode="singleTask" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="Página inicial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
