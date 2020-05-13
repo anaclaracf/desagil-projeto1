@@ -1,79 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".Historia2">
 
 
     <TextView
         android:id="@+id/text_morse"
-        android:layout_width="match_parent"
-        android:layout_height="82dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="170dp"
         android:gravity="top"
-        android:layout_marginLeft="10dp"
         android:hint="Morse"
         android:textColor="#000000"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_write"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_traduc"
-        android:layout_width="match_parent"
-        android:layout_height="82dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="408dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
         android:gravity="top"
-        android:layout_marginLeft="10dp"
         android:hint="Tradução"
         android:textColor="#000000"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_write"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_morse" />
 
     <Button
         android:id="@+id/button_write"
-        android:layout_width="180dp"
-        android:layout_height="170dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/button_default"
         android:backgroundTint="#87717171"
         android:text="Clique(·)    Segure(-)"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_delete"
+        app:layout_constraintEnd_toStartOf="@+id/button_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_morse" />
 
     <Button
         android:id="@+id/button_bar"
-        android:layout_width="185dp"
-        android:layout_height="144dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/button_default"
         android:backgroundTint="#87717171"
         android:text="/"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_write"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_write"
+        app:layout_constraintTop_toTopOf="@+id/button_write" />
 
     <Button
         android:id="@+id/button_space"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="11dp"
         android:background="@drawable/button_default"
-        android:layout_marginBottom="10dp"
-        android:layout_width="400dp"
-        android:layout_marginLeft="5dp"
-        android:layout_height="71dp"
         android:backgroundTint="#87717171"
         android:text="Espaço"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_delete"
+        app:layout_constraintEnd_toStartOf="@+id/button_delete"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button_delete"
+        android:layout_width="197dp"
+        android:layout_height="197dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/button_default"
-        android:layout_marginBottom="10dp"
-        android:layout_width="400dp"
-        android:layout_marginLeft="5dp"
-        android:layout_height="71dp"
         android:backgroundTint="#87717171"
         android:text="delete"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_space"
+        app:layout_constraintTop_toBottomOf="@+id/button_write" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
