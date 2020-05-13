@@ -35,7 +35,7 @@ public class Historia1 extends AppCompatActivity {
     @Override
     public void onBackPressed()
     {
-        startActivity(new Intent(Historia1.this, MainActivity.class));
+        startActivity(new Intent(Historia1.this, PreHistoria1.class));
         finish();
     }
 

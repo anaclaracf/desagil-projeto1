@@ -19,50 +19,27 @@ public class MainActivity extends AppCompatActivity {
         Button buttonExample1 = findViewById(R.id.button_example1);
         Button buttonExample2 = findViewById(R.id.button_example2);
         Button buttonExample3 = findViewById(R.id.button_example3);
-        Button buttonExample4 = findViewById(R.id.button_example4);
-//        Button buttonExample5 = findViewById(R.id.button_example5);
-        Button buttonExample6 = findViewById(R.id.button_example6);
+
+
 
         buttonExample1.setOnClickListener((view) -> {
-            Intent intent = new Intent(MainActivity.this, Historia1.class);
-            intent.putExtra("bla", buttonExample1.getText().toString());
+            Intent intent = new Intent(MainActivity.this, PreHistoria1.class);
             startActivity(intent);
             onPause();
         });
 
         buttonExample2.setOnClickListener((view) -> {
-            Intent intent = new Intent(MainActivity.this, Historia1.class);
-            intent.putExtra("bla", buttonExample2.getText().toString());
+            Intent intent = new Intent(MainActivity.this, Historia2.class);
             startActivity(intent);
             onPause();
         });
 
         buttonExample3.setOnClickListener((view) -> {
-            Intent intent = new Intent(MainActivity.this, Historia1.class);
-            intent.putExtra("bla", buttonExample3.getText().toString());
+            Intent intent = new Intent(MainActivity.this, PreDict.class);
             startActivity(intent);
             onPause();
         });
 
-        buttonExample4.setOnClickListener((view) -> {
-            Intent intent = new Intent(MainActivity.this, Historia1.class);
-            intent.putExtra("bla", buttonExample4.getText().toString());
-            startActivity(intent);
-            onPause();
-        });
-
-
-//        buttonExample5.setOnClickListener((view) -> {
-//            Intent intent = new Intent(MainActivity.this, Historia2.class);
-//            startActivity(intent);
-//            onPause();
-//        });
-
-        buttonExample6.setOnClickListener((view) -> {
-            Intent intent = new Intent(MainActivity.this, Historia5.class);
-            startActivity(intent);
-            onPause();
-        });
 
     }
 }

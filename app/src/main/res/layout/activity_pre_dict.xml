@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:layout_marginLeft="5dp"
         android:background="@drawable/button_default"
         android:backgroundTint="#87717171"
-        android:text="Texto rápido"
+        android:text="Dicionário Romano para Morse"
         android:textSize="20sp" />
 
     <Button
@@ -30,20 +30,8 @@
         android:backgroundTint="#87717171"
         android:textSize="20sp"
         android:gravity="center"
-        android:text="Tradutor" />
+        android:text="Dicionário Morse para Romano" />
 
-    <Button
-        android:id="@+id/button_example3"
-        android:layout_width="400dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:layout_marginLeft="5dp"
-        android:backgroundTint="#87717171"
-        android:background="@drawable/button_default"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:text="Dicionários" />
 
 </LinearLayout>
 
