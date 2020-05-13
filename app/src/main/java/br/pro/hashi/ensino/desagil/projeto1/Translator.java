@@ -539,9 +539,12 @@ public class Translator {
             }
 
         }
-
-
         return list;
+
+    }
+
+    public HashMap< Character, Node> getMap() {
+        return map;
     }
 }
 

@@ -32,10 +32,10 @@
 
     <Button
         android:id="@+id/button_write"
-        android:layout_height="71dp"
-        android:layout_marginBottom="10dp"
-        android:layout_width="400dp"
+        android:layout_width="180dp"
+        android:layout_height="170dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/button_default"
         android:backgroundTint="#87717171"
         android:text="Clique(·)    Segure(-)"
@@ -43,11 +43,11 @@
 
     <Button
         android:id="@+id/button_bar"
-        android:background="@drawable/button_default"
-        android:layout_marginBottom="10dp"
-        android:layout_width="400dp"
+        android:layout_width="185dp"
+        android:layout_height="144dp"
         android:layout_marginLeft="5dp"
-        android:layout_height="71dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_default"
         android:backgroundTint="#87717171"
         android:text="/"
         android:textSize="50sp" />
